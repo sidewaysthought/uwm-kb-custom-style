@@ -87,19 +87,19 @@ h4 {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 1.0rem;
 }
 
 h4 {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 p {
@@ -121,7 +121,7 @@ a[name] {
 }
 
 pre {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
@@ -139,29 +139,29 @@ hr.kbhr1 {
 }
 
 .auto-pre-txt {
-	font-size: 10pt;
+	font-size: 0.8333rem;
 	font-family: arial, sans-serif, helvetica;
 	line-height: 1.25em;
 }
 
 .txt-normal-gray {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 .txt-unavailable {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 .txt-88pct-gray {
-	font-size: 88%;
+	font-size: 0.88rem;
 }
 
 .txt-88pct {
-	font-size: 88%;
+	font-size: 0.88rem;
 }
 
 .gloss-txt-88pct-gray {
-	font-size: 88%;
+	font-size: 0.88rem;
 }
 
 /* Overall container, eg. width:960px; */
@@ -193,7 +193,7 @@ hr.kbhr1 {
 
 #top-left-links li,
 #top-right-links li {
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 14px;
 	display: inline;
 	padding: 0 5px;
@@ -267,7 +267,7 @@ hr.kbhr1 {
 	padding: 0;
 	display: inline-block;
 	line-height: 25px;
-	font-size: 1em;
+	font-size: 1.0rem;
 	vertical-align: top;
 	list-style-type: none;
 	zoom: 1;
@@ -278,7 +278,7 @@ hr.kbhr1 {
 
 #under-logo-links li a,
 #under-search-links li a {
-	font-size: 1em;
+	font-size: 1.0rem;
 	font-weight: bold;
 	padding: 0 18px;
 	text-decoration: none;
@@ -304,7 +304,7 @@ hr.kbhr1 {
 	padding: 10px 5px 7px 5px;
 	text-shadow: 2px 2px #000000;
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: bold;
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 }
@@ -324,28 +324,28 @@ hr.kbhr1 {
 
 #search-form {
 	width: 100%;
-	font-size: 10px;
+	font-size: 0.625rem;
 	white-space: nowrap;
 	margin-top: 16px;
 }
 
 #search-form .inputBox {
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 
 #search-form .selectBox {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	width: 100px;
 }
 
 #search-form .search {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-weight: bold;
 	font-family: arial, verdana, sans-serif;
 }
 
 #search-form a.advanced {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	text-decoration: none;
 	padding: 1px 6px 2px 6px;
 	border: 1px solid #999999;
@@ -467,7 +467,7 @@ hr.kbhr1 {
 #qlinks li,
 #resource-links li {
 	list-style-type: none;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-weight: bold;
 	line-height: 14px;
 }
@@ -511,7 +511,7 @@ hr.kbhr1 {
 #cat-nav ul li a {
 	display: block;
 	text-decoration: none;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-weight: bold;
 	padding: 5px;
 }
@@ -542,7 +542,7 @@ hr.kbhr1 {
 #out-green .word {
 	border-left: 3px solid #E5B7B3;
 	border-right: 3px solid #E5B7B3;
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: bold;
 	line-height: 18px;
 	text-align: center;
@@ -555,7 +555,7 @@ hr.kbhr1 {
 	border-left: 3px solid #E5B7B3;
 	border-right: 3px solid #E5B7B3;
 	border-bottom: 3px solid #cc0033;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	line-height: 18px;
 	text-align: left;
 	padding: 1px 0px 4px 12px;
@@ -648,7 +648,7 @@ article {
 #recentDocs h2,
 .custom h2 {
 	text-align: left;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 18px;
 	font-weight: bold;
 	font-family: verdana, arial;
@@ -675,7 +675,7 @@ article {
 #recentDocs a.seemore,
 a.seemore {
 	text-transform: uppercase;
-	font-size: 9px;
+	font-size: 0.5625rem;
 	padding: 1px 10px 1px 5px;
 	border: 1px solid #999999;
 	margin: 3px 12px 4px 1px;
@@ -734,7 +734,7 @@ a.seemore.rss {}
 
 /* News module specific */
 #news .title {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: bold;
 }
 
@@ -810,32 +810,32 @@ ul.tree li.level6-last {}
 
 ul.tree li.level1,
 ul.tree li.level1-last {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 ul.tree li.level2,
 ul.tree li.level2-last {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 ul.tree li.level3,
 ul.tree li.level3-last {
-	font-size: 16px;
+	font-size: 1.0rem;
 }
 
 ul.tree li.level4,
 ul.tree li.level4-last {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 ul.tree li.level5,
 ul.tree li.level5-last {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 ul.tree li.level6,
 ul.tree li.level6-last {
-	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 /* from Christopher H., Department of African Languages & Literature */
@@ -866,7 +866,7 @@ ul.checklist li:before {
 /* Topic path close to the top of page */
 .topic-header-name {
 	text-align: left;
-	font-size: 16px;
+	font-size: 1.0rem;
 	line-height: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -875,7 +875,7 @@ ul.checklist li:before {
 }
 
 .topic-path {
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	margin: 0;
 	padding: 0;
 }
@@ -917,7 +917,7 @@ ul.topic-filters li {
 #news-search-result,
 #cross-inst-search,
 #topic-desc-doc {
-	font-size: 86%;
+	font-size: 0.86rem;
 	text-align: left;
 }
 
@@ -932,12 +932,12 @@ ul.topic-filters li {
 }
 
 #topic-desc-doc .title {
-	font-size: 125%;
+	font-size: 1.25rem;
 	font-weight: bold;
 }
 
 #topic-desc-doc .title a {
-	font-size: 90%;
+	font-size: 0.9rem;
 }
 
 #news-search-result .field_set {}
@@ -950,7 +950,7 @@ ul.topic-filters li {
 
 span.cursor1 {
 	cursor: pointer;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	text-decoration: underline;
 	line-height: 200%;
 }
@@ -961,7 +961,7 @@ span.cursor1:hover {
 }
 
 #search-result {
-	font-size: 90%;
+	font-size: 0.9rem;
 }
 
 #search-result #count {
@@ -984,7 +984,7 @@ span.cursor1:hover {
 
 .search-selector {
 	border: 1px solid #cccccc;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
@@ -1249,7 +1249,7 @@ td a {
 }
 
 #glossary-search .sbutton {
-	font-size: 10px;
+	font-size: 0.625rem;
 }
 
 #glossary-search #a-z {
@@ -1257,7 +1257,7 @@ td a {
 }
 
 #glossary-search a {
-	font-size: 110%;
+	font-size: 1.1rem;
 	font-weight: bold;
 	margin-top: 10px;
 }
@@ -1267,7 +1267,7 @@ td a {
 	border-bottom: gray 1px solid;
 	padding: 5px 0px;
 	margin: 5px 0px;
-	font-size: 88%;
+	font-size: 0.88rem;
 }
 
 #up-prev-next #prev,
@@ -1310,7 +1310,7 @@ td a {
 	width: 3%;
 	text-align: right;
 	vertical-align: top;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	padding: 3px;
 }
 
@@ -1334,7 +1334,7 @@ td a {
 	text-align: right;
 	vertical-align: top;
 	padding: 3px;
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 
 .kbsuggestform1 td {
@@ -1351,7 +1351,7 @@ table.feedback {
 .feedback-btn-yes,
 .feedback-btn-no {
 	cursor: pointer;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	text-decoration: none;
 	padding: 1px 6px 0 6px;
 	border: 1px solid #cad4e7;
@@ -1360,7 +1360,7 @@ table.feedback {
 
 .feedback-btn-yes-clicked,
 .feedback-btn-no-clicked {
-	font-size: 12px;
+	font-size: 0.75rem;
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
@@ -1379,7 +1379,7 @@ d.kb-error,
 
 a.feedback-btn-link {
 	cursor: pointer;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	text-decoration: none;
 	padding: 1px 6px 0 6px;
 	margin-left: 2px;
@@ -1392,12 +1392,12 @@ a.feedback-btn-link {
 #fav-marked {
 	margin: 6px;
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	font-size: 10px;
+	font-size: 0.625rem;
 }
 
 #count-yes,
 #count-no {
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 
 .suggest-doc1,
@@ -1412,7 +1412,7 @@ a.feedback-btn-link {
 
 a.boxlink,
 input.boxlink {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	text-decoration: none;
 	padding: 0 6px 0 6px;
 	border: 1px solid #cad4e7;
@@ -1436,7 +1436,7 @@ a.boxlink.recursive {
 }
 
 .news-update-time {
-	font-size: 10px;
+	font-size: 0.625rem;
 }
 
 .print-doc-body {
@@ -1469,7 +1469,7 @@ a.boxlink.recursive {
 	border-width: 1px;
 	box-shadow: none;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	margin: 0 0.2rem 0 0;
 	padding: 4px 4px;
@@ -1515,7 +1515,7 @@ p.kb-common-chevron {
 	margin: 0;
 	margin-right: -10px;
 	padding: 0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	float: right;
 	cursor: pointer;
 	transform: rotate(90deg);
@@ -1544,7 +1544,7 @@ p.kb-common-chevron {
 	padding: 10px 0 8px 0;
 	clear: both;
 	text-align: center;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-family: verdana, arial, sans-serif;
 }
 
@@ -1638,7 +1638,7 @@ ul.toggle15 ul {
 }
 
 #blogrefresh {
-	font-size: 10px;
+	font-size: 0.625rem;
 	font-weight: normal;
 	padding: 5px;
 	margin: 2px;
@@ -1647,7 +1647,7 @@ ul.toggle15 ul {
 }
 
 .blogtitle {
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 20px;
 	font-weight: bold;
 	text-decoration: none;
@@ -1656,7 +1656,7 @@ ul.toggle15 ul {
 .blogtxt {
 	margin: 4px;
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	font-size: 11px;
+	font-size: 0.6875rem;
 }
 
 .bloginput {
@@ -1667,7 +1667,7 @@ ul.toggle15 ul {
 
 .countdown {
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	font-size: 10px;
+	font-size: 0.625rem;
 	text-align: right;
 	border: none;
 }
@@ -1679,7 +1679,7 @@ ul.toggle15 ul {
 }
 
 input.btn {
-	font-size: 10px;
+	font-size: 0.625rem;
 
 	margin-top: 2px;
 	border: 1px solid #999999;
@@ -1687,14 +1687,14 @@ input.btn {
 }
 
 input.btn1 {
-	font-size: 10px;
+	font-size: 0.625rem;
 	margin-top: 2px;
 	border: 0px solid;
 }
 
 a.btn1,
 a:visited.btn1 {
-	font-size: 10px;
+	font-size: 0.625rem;
 	margin-top: 2px;
 	border: 0px solid;
 	text-decoration: none;
@@ -1728,7 +1728,7 @@ div#mouseover-dropdown li {
 	padding: 0px 18px;
 	display: inline-block;
 	line-height: 25px;
-	font-size: 1em;
+	font-size: 1.0rem;
 	vertical-align: top;
 	list-style-type: none;
 	position: relative;
@@ -1745,7 +1745,7 @@ div#mouseover-dropdown li:last-child {}
 
 div#mouseover-dropdown span,
 div#mouseover-dropdown a {
-	font-size: 1em;
+	font-size: 1.0rem;
 	font-weight: bold;
 	text-decoration: none;
 	margin: 0;
@@ -1847,7 +1847,7 @@ div#mouseover-dropdown li:hover ul {
 
 	#top-left-links li,
 	#top-right-links li {
-		font-size: 12px;
+		font-size: 0.75rem;
 		font-weight: normal;
 		line-height: 8px;
 	}
@@ -1877,7 +1877,7 @@ div#mouseover-dropdown li:hover ul {
 
 	#group-logo .group-name {
 		padding: 0;
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	#logo-search {
@@ -1886,7 +1886,7 @@ div#mouseover-dropdown li:hover ul {
 
 	#search-form .inputBox,
 	#search-form .search {
-		font-size: 10px;
+		font-size: 0.625rem;
 		font-weight: normal;
 	}
 
@@ -1905,7 +1905,7 @@ div#mouseover-dropdown li:hover ul {
 
 	#under-logo-links li a,
 	#under-search-links li a {
-		font-size: 0.9em;
+		font-size: 0.9rem;
 		padding: 0 10px;
 		display: inline;
 	}
@@ -1967,7 +1967,7 @@ div#mouseover-dropdown li:hover ul {
 	#qcats a,
 	#cat-nav a {
 		padding: 5px;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		font-weight: bold;
 		display: inline;
 	}
@@ -2042,7 +2042,7 @@ div#mouseover-dropdown li:hover ul {
 	#cat-nav ul li a {
 		display: inline;
 		text-decoration: none;
-		font-size: 11px;
+		font-size: 0.6875rem;
 		font-weight: bold;
 		padding: 5px;
 		line-height: 14px;
