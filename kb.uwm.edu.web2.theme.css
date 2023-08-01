@@ -584,17 +584,6 @@ q
 	height: 1%;
 }
 
-/* IE Hack */
-#cat-nav * html ul li a {
-	height: 1%;
-}
-
-/* IE Hack */
-#cat-nav li:hover>ul,
-li.over ul {
-	display: block;
-}
-
 /* The magic */
 
 /* Outage module (usually right side), most groups don't use this */
@@ -1733,9 +1722,6 @@ p.kb-common-chevron {
 	float: right;
 	cursor: pointer;
 	transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	/* IE 9 */
-	/* Opera, Chrome, and Safari */
 }
 
 /* Hides the module's content after the collapse animation has run */
@@ -1752,9 +1738,6 @@ p.kb-common-chevron {
 /* Toggled (collapsed) state for the chevron, pointed right */
 .kb-common-collapsed p.kb-common-chevron {
 	transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	/* IE 9 */
-	/* Opera, Chrome, and Safari */
 }
 
 /* Footer section */
@@ -2036,20 +2019,6 @@ div#mouseover-dropdown li:hover ul {
 .group {
 	zoom: 1;
 }
-
-/* For IE 6/7 (trigger hasLayout) */
-.col {
-	float: left;
-	margin: 0;
-}
-
-/* margin: 1% 0 1% 1.6%; */
-.col:first-child {
-	margin-left: 0;
-	margin-bottom: 0;
-}
-
-/* all browsers except <=IE6 */
 
 /* May be useful for in page grids */
 .span_2_of_2 {
