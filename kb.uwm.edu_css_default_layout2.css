@@ -303,8 +303,6 @@ hr.kbhr1 {
 	list-style-type: none;
 	background: transparent url(/css/link_bar_button_border.gif) no-repeat right 0;
 	zoom: 1;
-	*display: inline;
-	/*ie7 fix*/
 }
 
 #under-logo-links li:last-child,
