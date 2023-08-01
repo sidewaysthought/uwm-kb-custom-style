@@ -5,11 +5,10 @@
 /* Some of the background/font colors for quick override */
 body {
 	background-color: #ffffff;
-	background-image: url('/css/uw-bgGradient-main.jpg');
-	background-repeat: repeat-x;
-	color: #333333;
-	font-size: small;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #404040;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
