@@ -3,7 +3,13 @@
 /* This common css is often used to deploy new features and functionality. */
 
 /* Some of the background/font colors for quick override */
-body {}
+body {
+	background-color: #fff;
+	color: #404040;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.5;
+}
 
 #top-links {}
 
@@ -45,7 +51,20 @@ a:hover {}
 
 a:visited {}
 
-#skip-nav a {}
+#skip-nav {
+	position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 1s ease;
+}
+
+#skip-nav:focus {
+	top: 0;
+}
 
 #skip-nav a:focus {}
 
@@ -57,15 +76,35 @@ div[aria-hidden="false"] {}
 h1,
 h2,
 h3,
-h4 {}
+h4,
+h5,
+h6 {
+	line-height: 1.125;
+}
 
-h1 {}
+h1 {
+	font-size: 2.5rem;
+	margin: 1.35em 0 .675em;
+}
 
-h2 {}
+h2 {
+	font-size: 2rem;
+	margin: 1.6875em 0 .8435em;
+}
 
-h3 {}
+h3 {
+	font-size: 1.5rem;
+}
 
-h4 {}
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1.125rem;
+}
+
+h6 {}
 
 p {}
 
@@ -80,6 +119,19 @@ pre {}
 abbr,
 span.abbr,
 acronym {}
+
+ul, ol {
+
+}
+
+ul li {
+
+}
+
+ol li {
+
+}
+
 
 hr.kbhr1 {}
 
