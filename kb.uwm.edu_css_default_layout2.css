@@ -14,8 +14,20 @@ body {
 }
 
 #top-links {
-	background-color: #680000;
-	color: #ffffff;
+	max-width: 1240px;
+	min-height: 39px;
+	background-color: #ffbd00;
+	color: #000;
+}
+
+#top-links a {
+	color: #000;
+	font-size: .8125rem;
+	font-weight: 400;
+}
+
+#top-links a:hover {
+	background-color: #ffd14c;
 }
 
 #top-links-int {}
