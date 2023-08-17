@@ -46,7 +46,8 @@ a:hover {
 #doc-summary {
     font-size: 1.5rem;
 }
-#top-links-int {
+#top-links-int,
+#top-links {
     color: #404040;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     line-height: 1.5;
@@ -57,33 +58,43 @@ a:hover {
     margin: 0;
     padding: 0;
 }
-#top-links-int > div {
+#top-links-int > div,
+#top-links > div {
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
 }
 #top-links-int .span_top_1_of_3,
 #top-links-int .span_top_2_of_3,
-#top-links-int .span_top_3_of_3 {
+#top-links-int .span_top_3_of_3,
+#top-links .span_top_1_of_3,
+#top-links .span_top_2_of_3,
+#top-links .span_top_3_of_3 {
     margin: 0;
     padding: 0;
 }
-#top-links-int ul, #top-links-int li {
+#top-links-int ul,
+#top-links-int li,
+#top-links ul,
+#top-links li {
     margin: 0;
     padding: 0;
     min-height: 35px;
 }
-#top-links-int ul {
+#top-links-int ul,
+#top-links ul {
     margin-top: 7px;
 }
-#top-links-int a {
+#top-links-int a,
+#top-links a {
     color: #404040;
     font-weight: 400;
     padding: 12px 15px 12px 12px;
     font-size: 0.825rem;
     line-height: 1.5;
 }
-#top-links-int a:hover {
+#top-links-int a:hover,
+#top-links a:hover {
     text-decoration: none;
     margin: 0;
     list-style: none;
