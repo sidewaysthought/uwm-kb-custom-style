@@ -1,1054 +1,375 @@
-@charset "utf-8";
-/* Use this common css directly or reference it via @import url('/css/common_kb.css'); */
-/* This common css is often used to deploy new features and functionality. */
-
-/* Some of the background/font colors for quick override */
+@import url(“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css”);
 body {
-	background-color: #fff;
-	color: #404040;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.125rem;
-	line-height: 1.5;
+    color: #404040;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    box-sizing: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
 }
-
-#top-links {}
-
-#top-links-int {}
-
-#logo-search {}
-
-#under-logo-links,
-#under-search-links {}
-
-#under-logo-links li a,
-#under-search-links li a {}
-
-.kbleftlinks .head,
-.kbrightlinks .head,
-#qlinks .head,
-#resource-links .head,
-#qcats .head,
-#news h2,
-#topDocs h2,
-#recentDocs h2,
-.custom h2 {}
-
-.kbleftlinks ul,
-.kbrightlinks ul,
-#qlinks ul,
-#resource-links ul {}
-
-.kbleftlinks li:not(:last-child),
-.kbrightlinks li:not(:last-child),
-#qlinks li:not(:last-child),
-#resource-links li:not(:last-child) {}
-
-#copyright {}
-
-a {}
-
-a:hover {}
-
-a:visited {}
-
-#skip-nav {
-	position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: #fff;
-    padding: 8px;
-    z-index: 100;
-    transition: top 1s ease;
-}
-
-#skip-nav:focus {
-	top: 0;
-}
-
-#skip-nav a:focus {}
-
-div[aria-hidden="true"] {}
-
-div[aria-hidden="false"] {}
-
-/* Generic headings, pre, form, img, etc */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	line-height: 1.125;
-}
-
 h1 {
-	font-size: 2.5rem;
-	margin: 1.35em 0 .675em;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
-
+h1:after {
+    margin-top: 24px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #ffbd00;
+    margin-left: 0;
+    margin-right: 0;
+}
 h2 {
-	font-size: 2rem;
-	margin: 1.6875em 0 .8435em;
+    font-size: 32px;
 }
-
 h3 {
-	font-size: 1.5rem;
+    font-size: 24px;
 }
-
 h4 {
-	font-size: 1.25rem;
+    font-size: 20px;
 }
-
 h5 {
-	font-size: 1.125rem;
+    font-size: 18px;
 }
-
-h6 {}
-
-p {}
-
-form {}
-
-img {}
-
-a[name] {}
-
-pre {}
-
-abbr,
-span.abbr,
-acronym {}
-
-ul, ol {
-
+h6 {
+    font-size: 16px;
 }
-
-ul li {
-
+a {
+    color: #2b74b1;
+    text-decoration: none;
 }
-
-ol li {
-
+a:hover {
+    text-decoration: underline;
 }
-
-
-hr.kbhr1 {}
-
-.auto-pre-txt {}
-
-.txt-normal-gray {}
-
-.txt-unavailable {}
-
-.txt-88pct-gray {}
-
-.txt-88pct {}
-
-.gloss-txt-88pct-gray {}
-
-/* Overall container, eg. width:960px; */
-#body-container {}
-
-#body-container>header {}
-
-/* Top links */
-#top-links,
-#top-links-int {}
-
-#top-left-links ul,
-#top-right-links ul {}
-
-#top-left-links li,
-#top-right-links li {}
-
-#top-left-links li {}
-
-#top-left-links .first,
-#top-right-links .first {}
-
-#top-left-links a,
-#top-right-links a {}
-
-#top-left-links a:hover,
-#top-right-links a:hover {}
-
-#top-right-links ul,
-#top-right-links li {}
-
-.span_top_3_of_3 {}
-
-.span_top_2_of_3 {}
-
-.span_top_1_of_3 {}
-
-/* Link bar under group log or under search form */
-#under-logo-links,
-#under-search-links {}
-
-#under-logo-links ul,
-#under-search-links ul {}
-
-#under-logo-links li,
-#under-search-links li {}
-
-#under-logo-links li:last-child,
-#under-search-links li:last-child {}
-
-#under-logo-links li a,
-#under-search-links li a {}
-
-#under-logo-links ul li a:hover,
-#under-search-links ul li a:hover {}
-
-/* Logo and search form */
-#logo-search {}
-
-#group-logo {}
-
-#group-logo .group-name,
-#group-logo .group-name-hide {}
-
-#group-logo .group-name {}
-
-#group-logo .group-name-hide {}
-
-#group-logo a,
-#group-logo a:hover {}
-
-#search-form {}
-
-#search-form .inputBox {}
-
-#search-form .selectBox {}
-
-#search-form .search {}
-
-#search-form a.advanced {}
-
-#search-form a.advanced:hover {}
-
-/* If link bar between logo and search form, class .lower is used */
-#search-form.lower {}
-
-#search-form.lower a.advanced {}
-
-#search-form.lower a.advanced:hover {}
-
-
-/* selected topics */
-.ticked {}
-
-.span_logo-search_2_of_2 {}
-
-.span_logo-search_1_of_2 {}
-
-/* Content area (anything below the searchbox, eg. content modules, kb article content) */
-#container {}
-
-/* Handle for kb article content */
-#page-content {}
-
-.custom {}
-
-/* Side menus */
-.kbleftlinks,
-.kbrightlinks,
-#qlinks,
-#resource-links,
-#qcats {}
-
-.kbleftlinks .head,
-.kbrightlinks .head,
-#qlinks .head,
-#resource-links .head,
-#qcats .head {}
-
-.kbleftlinks a,
-.kbrightlinks a,
-#qlinks a,
-#resource-links a,
-#qcats a {}
-
-.kbleftlinks a:hover,
-.kbrightlinks a:hover,
-#qlinks a:hover,
-#resource-links a:hover,
-#qcats a:hover {}
-
-.kbleftlinks a:visited,
-.kbrightlinks a:visited,
-#qlinks a:visited,
-#resource-links a:visited,
-#qcats a:visited {}
-
-.kbleftlinks ul,
-.kbrightlinks ul,
-#qlinks ul,
-#resource-links ul {}
-
-.kbleftlinks li,
-.kbrightlinks li,
-#qlinks li,
-#resource-links li {}
-
-/* Nav menu (Topics tree, always on the left side) */
-#qcats .pad {}
-
-#qcats .cat-sub {}
-
-#qcats ul {}
-
-#cat-nav ul {}
-
-#cat-nav ul li {}
-
-#cat-nav ul li:last-child {}
-
-#cat-nav li ul {}
-
-#cat-nav ul li a {}
-
-#cat-nav * html ul li {}
-
-/* The magic */
-
-/* Outage module (usually right side), most groups don't use this */
-#out,
-#out-green {}
-
-#out .head,
-#out-green .head {}
-
-#out .word,
-#out-green .word {}
-
-#out .history,
-#out-green .history {}
-
-#out a,
-#out-green a {}
-
-#out a:hover,
-#out-green a:hover {}
-
-#out .word,
-#out .history {}
-
-#out-green .word,
-#out-green .history {}
-
-#out .head {}
-
-#out .word {}
-
-#out-green .head {}
-
-#out-green .word {}
-
-/* Middle area: 1 cols or 2 cols or 3 cols */
-/* Small left column, large right column. Hides 'side-right' modules entirely */
-#middle-sect2,
-#middle-sect3,
-#middle-sect1,
-#middle-sect22 {}
-
-article {}
-
-.span_middle2_2_of_2 {}
-
-.span_middle2_1_of_2 {}
-
-.span_middle22_2_of_2 {}
-
-.span_middle22_1_of_2 {}
-
-.span_middle3_3_of_3.col {}
-
-.span_middle3_2_of_3 {}
-
-.span_middle3_1_of_3 {}
-
-/* Fixed content modules: News, Top Documents, Recent Documents + Custom module(s) */
-#news,
-#topDocs,
-#recentDocs,
-.custom {}
-
-#news h2,
-#topDocs h2,
-#recentDocs h2,
-.custom h2 {}
-
-#news a,
-#topDocs a,
-#recentDocs a,
-.custom a {}
-
-#news a:hover,
-#topDocs a:hover,
-#recentDocs a:hover,
-.custom a:hover {}
-
-#news a.seemore,
-#topDocs a.seemore,
-#recentDocs a.seemore,
-a.seemore {}
-
-#news a.seemore,
-#topDocs a.seemore,
-#recentDocs a.seemore {}
-
-#news a.seemore:hover,
-#topDocs a.seemore:hover,
-#recentDocs a.seemore:hover,
-a.seemore:hover {}
-
-a.seemore.rss {}
-
-#topDocs .listdoc,
-#recentDocs .listdoc {}
-
-#topDocs .listdoc a,
-#recentDocs .listdoc a {}
-
-#topDocs .listdoc a:hover,
-#recentDocs .listdoc a:hover {}
-
-#topDocs ol,
-#recentDocs ol,
-.custom ol {}
-
-#topDocs li,
-#recentDocs li,
-.custom li {}
-
-/* News module specific */
-#news .title {}
-
-#news ul {}
-
-#news li {}
-
-#news .nonews {}
-
-#news .summary {}
-
-#news .highImpactTitle {}
-
-#news .highImpactSummary {}
-
-/* Custom content module */
-.custom p {}
-
-/* Topics tree in a custom content module */
-ul.tree,
-ul.tree ul {}
-
-ul.tree ul {}
-
-ul.tree li {}
-
-ul.tree li.last {}
-
-ul.tree li.level1-last,
-ul.tree li.level2-last,
-ul.tree li.level3-last,
-ul.tree li.level4-last,
-ul.tree li.level5-last,
-ul.tree li.level6-last {}
-
-ul.tree li.level1,
-ul.tree li.level1-last {}
-
-ul.tree li.level2,
-ul.tree li.level2-last {}
-
-ul.tree li.level3,
-ul.tree li.level3-last {}
-
-ul.tree li.level4,
-ul.tree li.level4-last {}
-
-ul.tree li.level5,
-ul.tree li.level5-last {}
-
-ul.tree li.level6,
-ul.tree li.level6-last {}
-
-/* from Christopher H., Department of African Languages & Literature */
-/* Apply to checklist classed ordered lists */
-ol.checklist {}
-
-/* Remove the number [1] */
-ol.checklist>li:before {}
-
-/* Insert content before the list item. Insert a ballot box and a blank space */
-/* Apply to checklist classed unordered lists */
-ul.checklist {}
-
-/* Remove the bullet [1] */
-ul.checklist li:before {}
-
-/* Insert content before the list item.  Insert a ballot box and a blank space */
-/* [1]: Only applies to the current list level; embedded lists will regain numbers and bullets. */
-
-/* Topic path close to the top of page */
-.topic-header-name {}
-
-.topic-path {}
-
-.topic-path a {}
-
-.topic-path a:hover {}
-
-.topic-footer {}
-
-/* Topic filters close to the top of search result page */
-ul.topic-filters {}
-
-ul.topic-filters li {}
-
-/* Cross-site/cross-topic search results */
-#cross-site-search,
-#filter-by-topics,
-#news-search-result,
-#cross-inst-search,
-#topic-desc-doc {}
-
-#cross-site-search .field_set,
-#filter-by-topics .field_set,
-#news-search-result .field_set,
-#cross-inst-search .field_set,
-#topic-desc-doc .field_set {}
-
-#topic-desc-doc .title {}
-
-#topic-desc-doc .title a {}
-
-#news-search-result .field_set {}
-
-#cross-inst-search ul {}
-
-span.cursor1 {}
-
-span.cursor1:hover {}
-
-#search-result {}
-
-#search-result #count {}
-
-#search-result #sort {}
-
-#search-result #clear {}
-
-.search-selector {}
-
-#search-result-table1 {}
-
-#search-result-table1 caption {}
-
-#search-result-table1 tr {}
-
-#search-result-table1 tr:hover th.aleft {}
-
-#search-result-table1 tr:hover td {}
-
-#search-result-table1 tr.owner-group-row:hover,
-.other-group-row:hover {}
-
-#search-result-table1 th {}
-
-#search-result-table1 th.aleft {}
-
-#search-result-table1 td {}
-
-#search-result-table1 td.aleft {}
-
-.result-pagination-table {}
-
-.result-pagination-table td {}
-
-.result-pagination-table td:hover {}
-
-.generic-acenter-table {}
-
-.generic-acenter-table td {}
-
-td.result-pagination-current {}
-
-tr.row-hover:hover {}
-
-.search-priority {}
-
-.mainkbt-table {}
-
-.mainkbt-compact {}
-
-.mainkbt-table caption,
-.mainkbt-compact caption {}
-
-.mainkbt-table tr:nth-child(odd),
-.mainkbt-compact tr:nth-child(odd) {}
-
-.mainkbt-table tr:nth-child(even),
-.mainkbt-compact tr:nth-child(even) {}
-
-.mainkbt-table tr,
-.mainkbt-compact tr {}
-
-.mainkbt-table tr.selected,
-.mainkbt-compact tr.selected {}
-
-.mainkbt-table tr:hover th.aleft,
-.mainkbt-compact tr:hover th.aleft {}
-
-.mainkbt-table tr:hover td,
-.mainkbt-compact tr:hover td {}
-
-.mainkbt-table th,
-.mainkbt-compact th {}
-
-.mainkbt-table th.aleft:hover,
-.mainkbt-compact th.aleft:hover {}
-
-.mainkbt-table th.aleft,
-.mainkbt-compact th.aleft {}
-
-.mainkbt-table th.aright,
-.mainkbt-compact th.aright {}
-
-.mainkbt-table td,
-.mainkbt-compact td {}
-
-.mainkbt-table th a,
-td a,
-.mainkbt-compact th a,
-td a {}
-
-.mainkbt-table td.aleft,
-.mainkbt-compact td.aleft {}
-
-.mainkbt-table td.aright,
-.mainkbt-compact td.aright {}
-
-.mainkbt-table td.csv,
-.mainkbt-compact td.csv {}
-
-.mainkbt-table tr.activation-requested-bg {}
-
-.mainkbt-table tr.deactivation-requested-bg {}
-
-.var-table-compact {}
-
-.var-table-full {}
-
-.var-table-compact th,
-.var-table-full th {}
-
-.var-table-compact th.aleft,
-.var-table-full th.aleft {}
-
-.var-table-compact th.aright,
-.var-table-full th.aright {}
-
-.var-table-compact th.acenter,
-.var-table-full th.acenter {}
-
-.var-table-compact tr:hover th,
-.var-table-full tr:hover th {}
-
-.var-table-compact tr:hover td,
-.var-table-full tr:hover td {}
-
-.var-table-compact td,
-.var-table-full td {}
-
-.var-table-compact td.int,
-.var-table-full td.int {}
-
-.var-table-compact td.ext,
-.var-table-full td.ext {}
-
-.var-table-compact td.csv,
-.var-table-full td.csv {}
-
-#glossary-search {}
-
-#glossary-search fieldset {}
-
-#glossary-search legend {}
-
-#glossary-search .sbutton {}
-
-#glossary-search #a-z {}
-
-#glossary-search a {}
-
-#up-prev-next {}
-
-#up-prev-next #prev,
-#up-prev-next #next {}
-
-#up-prev-next #prev {}
-
-#up-prev-next #next {}
-
-#up-prev-next #up {}
-
-#up-prev-next #clear {}
-
-/* Feedback section toward the bottom of page */
-.kbfeedbacktable1 {}
-
-/*min-width: 300px;*/
-.kbfeedbacktable1 th {}
-
-.kbfeedbacktable1 td {}
-
-.kbsuggestform1 {}
-
-.kbsuggestform1 th {}
-
-.kbsuggestform1 td {}
-
-table.feedback {}
-
-.feedback th {}
-
-.feedback-btn-yes,
-.feedback-btn-no {}
-
-.feedback-btn-yes-clicked,
-.feedback-btn-no-clicked {}
-
-.feedback-btn-yes,
-.feedback-btn-yes-clicked {}
-
-.yes_match {}
-
-d.kb-error,
-.feedback-btn-no,
-.feedback-btn-no-clicked,
-.no_match {}
-
-a.feedback-btn-link {}
-
-#feedback-thank-you,
-#ks-thank-you,
-#fav-marked {}
-
-#count-yes,
-#count-no {}
-
-.suggest-doc1,
-.suggest-doc2,
-.suggest-doc3 {}
-
-.suggest-doc1 a {}
-
-.suggest-doc1 a:hover {}
-
-a.boxlink,
-input.boxlink {}
-
-a.boxlink:hover,
-input.boxlink:hover,
-.feedback-btn-yes:hover,
-.feedback-btn-no:hover,
-a.feedback-btn-link:hover {}
-
-a.boxlink.recursive {}
-
-.news-update-time {}
-
-.print-doc-body {}
-
-.hidden {}
-
-.hide {}
-
-.kb-required:after {}
-
-.kb-textfield,
-.kb-textarea {}
-
-.kb-textfield:disabled,
-.kb-textfield:read-only,
-.kb-textarea:disabled,
-.kb-textarea:read-only {}
-
-.kb-listbox {}
-
-.kb-textfield:focus,
-.kb-textarea:focus,
-.kb-listbox:focus {}
-
-/* Makes room for the chevron, to avoid offsetting centred text */
-.kbleftlinks .head,
-.kbrightlinks .head,
-#qlinks .head,
-#resource-links .head,
-#qcats .head,
-#out .head,
-#out-green .head,
-#news h2,
-#topDocs h2,
-#recentDocs h2,
-.custom h2 {}
-
-/* Base (uncollapsed) state for the chevron, pointed downward */
-p.kb-common-chevron {}
-
-/* Hides the module's content after the collapse animation has run */
-.kb-common-collapsed>* {}
-
-/* Overrides the previous rule for the module header */
-.kb-common-collapsed>.head,
-.kb-common-collapsed>h2 {}
-
-/* Toggled (collapsed) state for the chevron, pointed right */
-.kb-common-collapsed p.kb-common-chevron {}
-
-/* Footer section */
-#copyright {}
-
-#copyright span {}
-
-#copyright a {}
-
-#copyright a:hover {}
-
-#view-toggle {}
-
-.to-kb-doc-top-anchor {}
-
-/* Experiment with list dropdown */
-ul.split {}
-
-ul.split li {}
-
-ul.split li.double {}
-
-ul.campus-partners,
-ul.kb-partners {}
-
-ul.campus-partners li,
-ul.campus-partners li {}
-
-ul.campus-partners .inst a {}
-
-li.selected {}
-
-ul.toggle ul,
-ul.toggle0 ul,
-ul.toggle1 ul,
-ul.toggle2 ul,
-ul.toggle3 ul,
-ul.toggle4 ul,
-ul.toggle5 ul,
-ul.toggle6 ul,
-ul.toggle7 ul,
-ul.toggle8,
-ul.toggle9 ul,
-ul.toggle10 ul,
-ul.toggle11 ul,
-ul.toggle12 ul,
-ul.toggle13 ul,
-ul.toggle14 ul,
-ul.toggle15 ul {}
-
-/* Blog only used by a few internal sites */
-#blogheader {}
-
-#blogrefresh {}
-
-.blogtitle {}
-
-.blogtxt {}
-
-.bloginput {}
-
-.countdown {}
-
-.blogsigniture {}
-
-input.btn {}
-
-input.btn1 {}
-
-a.btn1,
-a:visited.btn1 {}
-
-.blogmsov {}
-
-.blogmsou {}
-
-/* Mouse-over dropdown menus */
-div#mouseover-dropdown {}
-
-div#mouseover-dropdown ul {}
-
-div#mouseover-dropdown li {}
-
-div#mouseover-dropdown li li {}
-
-div#mouseover-dropdown li:last-child {}
-
-div#mouseover-dropdown span,
-div#mouseover-dropdown a {}
-
-div#mouseover-dropdown a:hover {}
-
-div#mouseover-dropdown li ul {}
-
-div#mouseover-dropdown li:hover ul {}
-
-/* Fluid grids */
-.section {}
-
-.group:before,
-.group:after {}
-
-/* grouping */
-.group:after {}
-
-.group {}
-
-/* May be useful for in page grids */
-.span_2_of_2 {}
-
-.span_1_of_2 {}
-
-.span_3_of_3 {}
-
-.span_2_of_3 {}
-
-.span_1_of_3 {}
-
-@media only screen and (max-width: 960px) {
-
-	/* remove margins */
-	#body-container {}
-
-	/* Variable width */
-	.span_2_of_2,
-	.span_1_of_2,
-	.span_3_of_3,
-	.span_2_of_3,
-	.span_1_of_3 {}
-
-	#top-links,
-	#top-links-int {}
-
-	#top-left-links ul,
-	#top-right-links ul {}
-
-	#top-left-links li,
-	#top-right-links li {}
-
-	.span_top_3_of_3,
-	.span_top_2_of_3 {}
-
-	.span_top_1_of_3 {}
-
-	#logo-search,
-	#group-logo,
-	#search-form {}
-
-	#group-logo .group-name {}
-
-	#logo-search {}
-
-	#search-form .inputBox,
-	#search-form .search {}
-
-	#under-logo-links,
-	#under-search-links {}
-
-	#under-logo-links li,
-	#under-search-links li {}
-
-	#under-logo-links li a,
-	#under-search-links li a {}
-
-	#under-logo-links ul li a:hover,
-	#under-search-links ul li a:hover {}
-
-	.span_logo-search_2_of_2 {}
-
-	.span_logo-search_1_of_2 {}
-
-	#middle-sect2,
-	#middle-sect22,
-	#middle-sect3 {}
-
-	.span_middle2_2_of_2,
-	.span_middle2_1_of_2,
-	.span_middle22_2_of_2,
-	.span_middle22_1_of_2,
-	.span_middle3_3_of_3,
-	.span_middle3_2_of_3,
-	.span_middle3_1_of_3 {}
-
-	.kbleftlinks .head,
-	.kbrightlinks .head,
-	#qlinks .head,
-	#resource-links .head,
-	#qcats .head,
-	#out .head,
-	#out-green .head {}
-
-	.kbleftlinks a,
-	.kbrightlinks a,
-	#qlinks a,
-	#resource-links a,
-	#qcats a,
-	#cat-nav a {}
-
-	.kbleftlinks a:hover,
-	.kbrightlinks a:hover,
-	#qlinks a:hover,
-	#resource-links a:hover,
-	#qcats a:hover {}
-
-	.kbleftlinks a:visited,
-	.kbrightlinks a:visited,
-	#qlinks a:visited,
-	#resource-links a:visited,
-	#qcats a:visited {}
-
-	.kbleftlinks ul,
-	.kbrightlinks ul,
-	#qlinks ul,
-	#resource-links ul,
-	#qcats ul {}
-
-	.kbleftlinks li,
-	.kbrightlinks li,
-	#qlinks li,
-	#resource-links li,
-	#qcats li {}
-
-	#qcats .pad {}
-
-	#cat-nav ul {}
-
-	#cat-nav ul li {}
-
-	#cat-nav li ul {}
-
-	#cat-nav ul li a {}
-
-	#cat-nav ul {}
-
-	#cat-nav li {}
-
-	#cat-nav li:hover ul,
-	li.over ul {}
-
-	/* Unhides any collapsed modules when the window size decreases beyond the set threshold */
-	.kb-common-collapsed>* {}
-
-	.kb-common-chevron {}
+#doc-summary {
+    font-size: 1.5rem;
+}
+#top-links-int {
+    color: #404040;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    box-sizing: inherit;
+    display: block;
+    width: 100%;
+    background: #ffbd00;
+    margin: 0;
+    padding: 0;
+}
+#top-links-int > div {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#top-links-int .span_top_1_of_3,
+#top-links-int .span_top_2_of_3,
+#top-links-int .span_top_3_of_3 {
+    margin: 0;
+    padding: 0;
+}
+#top-links-int ul, #top-links-int li {
+    margin: 0;
+    padding: 0;
+    min-height: 35px;
+}
+#top-links-int ul {
+    margin-top: 7px;
+}
+#top-links-int a {
+    color: #404040;
+    font-weight: 400;
+    padding: 12px 15px 12px 12px;
+    font-size: 0.825rem;
+    line-height: 1.5;
+}
+#top-links-int a:hover {
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    flex-shrink: 0;
+    background-color: #ffd14c;
+}
+#logo-search {
+    background-color: transparent;
+    box-sizing: inherit;
+    text-align: center;
+    top: 42px;
+    align-items: center;
+    width: 100%;
+}
+#logo-search div.col.span_logo-search_1_of_2,
+#logo-search div.col.span_logo-search_2_of_2 {
+    display: block;
+    width: 100%;
+}
+#logo-search div.col.span_logo-search_1_of_2 {
+    height: 74px;
+    padding-top: 20px;
+}
+#logo-search #group-logo,
+#search-form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1240px;
+}
+#logo-search #group_logo {
+    display: flex;
+    width: auto;
+    align-items: flex-start;
+}
+#logo-search #group-logo img {
+    align-self: flex-start;
+    width: 185px;
+    height: 55px;
+}
+#logo-search #group-logo .group-name-hide {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-weight: 400;
+    text-align: left;
+    color: #404040;
+    box-sizing: inherit;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    padding: 0px 0px 0px 50px;
+    margin: 0;
+    vertical-align: top;
+}
+#logo-search #group-logo .group-name-hide:after {
+    display: block;
+    font-size: 0.875rem;
+}
+#logo-search div.col.span_logo-search_2_of_2 {
+    background-color: #333333;
+    padding: 30px 0px 30px 0px;
+}
+#search-form {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#search-form form {
+    margin: 0;
+    vertical-align: top;
+    padding: 0 30px 0 30px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#search-form form input.inputBox {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 12px;
+    border: none;
+    overflow: visible;
+    color: #000;
+    box-sizing: inherit;
+}
+#search-form form select.selectBox {
+    display: none;
+    visibility: hidden;
+}
+#search-form form input.search {
+    background-color: #ffbd00;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid #fff;
+    height: 49px;
+    vertical-align: top;
+    margin-left: -3px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#search-form form input.search:focus {
+    box-sizing: border-box; 
+    border: 2px solid #cfcfcf;
+}
+#search-form a.advanced {
+    display: none;
+    visibility: hidden;
+}
+#search-form #resultc {
+    display: none;
+    visibility: hidden;
+}
+#maincontent {
+    max-width: 1240px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+#maincontent #middle-sect1 {
+    margin: 0;
+    padding: 0;
+}
+#maincontent #custom4 {
+    margin: 0;
+    padding: 0;
+}
+#maincontent #custom4 > h2 {
+    background-color: transparent;
+    font-size: 32px;
+    color: inherit;
+    font-family: inherit;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: inherit;
+}
+#maincontent #custom4 h2 p.kb-common-chevron {
+    display: none;
+    visibility: hidden;
+    padding: inherit;
+    margin: inherit;
+}
+#maincontent #custom4 ul.tree,
+#maincontent #custom4 ul.cat-sub,
+#maincontent #custom4 ul.tree li.first,
+#maincontent #custom4 ul.tree li,
+#maincontent #custom4 ul.tree li ul,
+#maincontent #custom4 ul.tree li ul li {
+    background: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+#maincontent #custom4 ul.tree a {
+    color: #2b74b1; 
+    text-decoration: inherit;
+}
+#maincontent #custom4 ul.tree a:hover {
+    text-decoration: underline;
+}
+#maincontent #custom4 > ul > li > ul > li > ul {
+    display: none;
+    visibility: hidden;
+}
+#maincontent #custom4 > ul.tree {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#maincontent #custom4 ul.tree > li {
+    flex: 0 0 calc(33% - 24px);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 30px;
+    margin-top: 12px;
+    margin-right: 24px;
+    margin-left: 0px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e5e5;
+    border-top: 4px solid #ffbd00;
+    background-color: #fff;
+}
+#maincontent #custom4 ul.tree > li > a {
+    font-size: 24px;
+    font-weight: bold;
+}
+#maincontent #custom4 > ul > li > ul,
+#maincontent #custom4 > ul > li > ul > li {
+    margin: 0;
+    padding: 0;
+}
+#maincontent #custom4 > ul > li > ul > li {
+    font-size: 1rem;
+    display: inline;
+}
+#maincontent #custom4 > ul > li > ul > li::after {
+    content: ", ";
+}
+#maincontent #custom4 > ul > li > ul > li:last-child::after {
+    content: "";
+}
+footer {
+    width: 100%;
+    background-color: #e9eaea;
+    margin: 0;
+    padding: 0;
+}
+footer #copyright {
+    border: 0;
+    background-color: #e9eaea;
+    font-size: 0.875rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer #copyright .brand {
+    font-size: 1rem;
+}
+@media screen and (max-width: 880px) {
+    #maincontent #custom4 ul.tree > li {
+        flex: 0 0 calc(50% - 24px);
+    }
+}
+@media screen and (max-width: 780px) {
+    #group-logo {
+        max-width: 756px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media screen and (max-width: 630px) {
+    #logo-search > div > div.col.span_logo-search_1_of_2 {
+        height: auto;
+        padding-bottom: 12px;
+    }
+    #logo-search #group-logo img {
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #logo-search #group-logo .group-name-hide {
+        display: block;
+        padding: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2,
+    #maincontent #custom4 > h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    #maincontent #custom4 ul.tree > li {
+        flex: 0 0 calc(100% - 24px);
+    }
 }
