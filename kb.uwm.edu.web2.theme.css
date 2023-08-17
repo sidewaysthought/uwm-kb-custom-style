@@ -334,6 +334,24 @@ footer #copyright .brand {
         flex: 0 0 calc(50% - 24px);
     }
 }
+#topic-desc-doc > form > fieldset > legend,
+#doc-summary {
+    display: none;
+    visibility: hidden;
+}
+#topic-desc-doc > form > fieldset,
+#topic-desc-doc {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#cross-site-search .field_set, 
+#filter-by-topics .field_set, 
+#news-search-result .field_set, 
+#cross-inst-search .field_set, 
+#topic-desc-doc .field_set {
+    border: none;
+}
 @media screen and (max-width: 780px) {
     #group-logo {
         max-width: 756px;
